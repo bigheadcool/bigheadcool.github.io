@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- 1. Social Share Info -->
+        <meta name="title" content="Touch of Sound | Youwen Design" />
+        <meta name="description" content="Touch of Sound is an interactive interface for people to experience music with their hand gestures." />
+        <meta property="og:image" content="touch-cover.jpg" />
+
+        <meta name="author" content="You-Wen Liang">
+        <link rel="icon" type="image/png" href="../../img/icons.ico"/>
+
+        <!-- 2. Title -->
+        <title>Touch of Sound | Youwen Design</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../../css/main.css">    
+        <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="../../fonts/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+
+        <script src="../../js/plugins/jwplayer.js"></script>
+    </head>
+    <body>
+
+
+    <!-- Navigation -->
+    <!-- <a class="arrow-dark btn-lg pull-left toggle arrow change-all" style="z-index:100000; position:fixed" href="../"><i class="fa fa-arrow-left"></i><span>Back</span></a> -->
+        <div class="se-pre-con"></div>
+        <nav class="navigation nav-light">
+            <!-- <button id="trigger-overlay" class="changing-dark" type="button">Open Overlay</button> -->
+            <a href="../../"><img class="icontop front" src="../../img/logocover-light.svg"></a></br></br></br>
+            <ul class="list-unstyled list-inline text-center front">
+                <li><a href="../../about">About</a></li>
+                <li class="active"><a href="../">Work</a></li>    
+                <li><a href="http://blog.youwenliang.com">Blog</a></li>
+            </ul>
+        </nav>
+        <img src="assets/touch-cover.jpg" style="display:none">
+        <!-- 3. Header Class-->
+        <header id="top" class="header-project-touch bg-primary paralax">
+            <!-- 4. Video Background -->
+            <video autoplay loop muted poster="assets/touch.jpg" id="bgvid">
+                <source src="assets/touch-video.mp4" type="video/mp4">
+                <source src="assets/touch-video.webm" type="video/webm">
+            </video>
+
+
+            <!-- 5. Project Cover -->
+            <div class="text-vertical-center" style="padding:100px 40px 0 40px">
+                <h1>Touch of Sound</h1>
+                <h3 class="tagline">creative coding • leap motion • music</h3>
+                <br>
+                <a href="#project" class="btn-dark btn-lg lg-icon angle-down"><i class="fa fa-angle-down"></i></a>
+            </div>
+        </header>
+
+        <!-- Blog -->
+        <section class="project">
+            <div class="container" id="project">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                        <!-- 6. Project Content -->
+                        <p class="lead blog-title large" style="margin-top:77px;">Touch of Sound</p>
+                        <p class="date" style="padding:0 0 10px 0">creative coding • leap motion • music</p>
+                        
+                        <p class="leadbig">Touch of Sound is an interactive interface for people to experience music with their hand gestures.</p>
+                        <p class = "lead blog-content" style="padding-top:20px">
+                            This is a project for the Nightlife at the California Academy of Science, and the theme of the event was “Metamorphosis.” In this project I used Leap Motion to detect people’s hands position to draw images on the screen, and at the same time people can control the tempo of the music they are listening to. The distance between two hands controls the size of the shapes and the speed of the music. The idea is to help people relax in this virtual space, let their hands and whole their bodies move with the music, and see the mesmerizing images grow.</br></br>
+                        </p>
+                        <div class="blog-info border-touch">
+                            <h4><strong>Software / Hardware: </strong>Processing, Leap Motion Library, Soundcipher Library</h4>
+                            <h4><strong>Developed by:   </strong>You-Wen Liang</h4>
+                        </div></br></br>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Project Video -->
+        <div class="text-center">
+            <h2 class="text-center color-touch">VIDEO</h2>
+            <hr class="small">
+            </br></br></br></br>
+        </div>
+        <div class="container hideme">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0">
+                    <section class="video" data-show="on-scroll"><div id="player1EoocyvI"></div><script>jwplayer('player1EoocyvI').setup({
+                        file: 'assets/touch.mp4',
+                        image: 'assets/touch-poster1.jpg',
+                        width: '100%',
+                        aspectratio: '16:9',
+                        skin: '/skin.xml'
+                    });</script></section></br></br>
+                </div>
+            </div>
+        </div>
+        </br></br>
+        <div class="text-center" style="margin-top:23px">
+            <h2 class="text-center color-touch">HOW IT WORKS</h2>
+            <hr class="small">    
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- 6. Project Content -->
+                    <p class = "lead blog-content">
+                        Leap Motion can easily detect user's hand position and even finger position, so I combined Leap Motion with Processing to capture the information of user's hands, and used that to control the speed of the music and the visual representations. User can create a unique image that will be saved and uploaded to a website, showcasing their creativity as a footprint.</br></br></br></br></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container hideme">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0">
+                    <img class = "img-responsive" src="assets/how-03.png"/></br></br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" id="how" style="margin-top:17px">
+            <h2 class="text-center color-touch">WEBSITE</h2>
+                <hr class="small">
+                </br></br></br></br>
+        </div>
+        <div class="container hideme">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0">
+                    <a href="http://www.youwenliang.com/CAS.php" target="_blank"><img class = "img-responsive" src="assets/website.jpg"/></a></br>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="http://www.youwenliang.com/CAS.php" target="_blank">(http://www.youwenliang.com/CAS.php)</a>
+        </div>
+        </br></br></br></br>
+        <div class="text-center" style="margin-top:23px">
+            <h2 class="text-center color-touch">SCREEN</h2>
+            <hr class="small">
+            </br></br></br></br>
+        </div>
+        <div class="container hideme" id="screen">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0">
+                    <section class="video" data-show="on-scroll"><div id="player1EoocyvII"></div><script>jwplayer('player1EoocyvII').setup({
+                        file: 'assets/screen.mp4',
+                        image: 'assets/touch-poster2.jpg',
+                        width: '100%',
+                        aspectratio: '16:9',
+                        skin: '/skin.xml'
+                    });</script></section>
+                    </br></br></br></br>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Project Images -->
+        <div class="text-center" style="margin-top:24px">
+            <h2 class="text-center color-touch">MORE PHOTOS</h2>
+            <hr class="small"></br></br>
+        </div>
+        <div class="container hideme">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0">
+                    <div id="cbp-fwslider" class="cbp-fwslider" style="max-height:106%; margin:0px">
+                        <ul>
+                            <li><img id="photos" class = "img-responsive" src="assets/touch-1.jpg"/></li>
+                            <li><img class = "img-responsive" src="assets/touch-2.jpg"/></li>
+                            <li><img class = "img-responsive" src="assets/touch-3.jpg"/></li>
+                            <li><img class = "img-responsive" src="assets/touch-4.jpg"/></li>
+                            <li><img class = "img-responsive" src="assets/touch-5.jpg"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </br></br></br>
+        <div class="text-center">
+            <hr class="small"></hr>
+            <p class="date" style="padding:0 0 10px 0">Share my work</p>
+            <a href="https://twitter.com/home?status=http://youwenliang.com/work/touch-of-sound/" target="_blank"><i class="circle fa fa-twitter fa-fw social"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://youwenliang.com/work/touch-of-sound/" target="_blank"><i class="circle fa fa-facebook fa-fw social"></i></a>
+            <a href="https://plus.google.com/share?url=http://youwenliang.com/work/touch-of-sound/" target="_blank"><i class="circle fa fa-google-plus fa-fw social"></i></a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://youwenliang.com/work/touch-of-sound/&title=Touch%20of%20Sound&summary=Touch%20of%20Sound%20is%20an%20interactive%20interface%20for%20people%20to%20experience%20music%20with%20their%20hand%20gestures.&source=" target="_blank"><i class="circle fa fa-linkedin fa-fw social"></i></a>
+        </div>
+        </br></br></br></br>
+
+        <section class="section-more item-touch">
+        <hr class="medium"></hr>
+        </br>
+        <a href="../"><h2 class="text-center" style="color:#FFF">MORE PROJECTS</h2></a>
+        <hr class="small"></hr><br>
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0 text-center">
+                    <div class="row">
+                        <div class="col-md-6";>
+                            <div class="portfolio-item item-mariana">
+                                <a href="../mariana-immersion">
+                                    <img class="img-portfolio img-responsive" src="../mariana-immersion/assets/mariana-cover.jpg">
+                                    <i class="fa fa-angle-left"></i>
+                                   <h1>Mariana Immersion
+                                        <p class="portfolio-description">augmented reality • immersive experience</p>
+                                   </h1> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6";>
+                            <div class="portfolio-item item-unfolding">
+                                <a href="../unfolding-through-time">
+                                    <img class="img-portfolio img-responsive" src="../unfolding-through-time/assets/unfolding-cover.jpg">
+                                    <i class="fa fa-angle-right"></i>
+                                   <h1>Unfolding through Time
+                                        <p class="portfolio-description">projection mapping • kinect • fashion design</p>
+                                   </h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="text-center" id="footer">
+            </br>
+            <a href="#top" class="btn-light btn-lg lg-icon angle-up"><i class="fa fa-angle-up"></i></a>
+            <p class="text-center text-muted">&copy; 2015 Youwen Design. All rights reserved.</p>
+            <a href="https://twitter.com/bigheadcool" target="_blank"><i class="fa fa-twitter fa-fw social"></i></a>
+            <a href="http://www.linkedin.com/pub/you-wen-liang/59/4b4/413" target="_blank"><i class="fa fa-linkedin fa-fw social"></i></a>
+            <a href="mailto:yliang@cca.edu" target="_blank"><i class="fa fa-envelope fa-fw social"></i></a>
+            <!-- <a href="../"><img class="icontop" style="display:inline" src="../img/logocover-dark.svg"></a></br></br></br> -->
+        </footer>
+
+        <!-- jQuery Version 1.11.0 -->
+        <script src="../../js/jquery-1.11.0.js"></script>
+        <script src="../../js/TweenMax.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/modernizr.custom.js"></script>
+        <script src="../../js/jquery-ui.min.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="../../js/demo1.js"></script>
+        <script src="../../js/classie.js"></script>
+        
+        <script src="../../js/plugins/jquery.parallax-1.1.3.js"></script>
+        <script src="../../js/plugins/jquery.twbsPagination.js"></script>
+        <script src="../../js/plugins/jquery.twbsPagination.min.js"></script>
+        
+        <script src="../../js/plugins/jquery-1.11.0.min.js"></script>
+        <script src="../../js/plugins/lightbox.min.js"></script>
+
+        <script src="../../js/plugins/jquery.responsivevideos.js"></script>
+        <script src="../../js/plugins/jquery.cbpFWSlider.min.js"></script>
+
+        <script src="../../js/plugins/jquery.waitforimages.js"></script>
+
+        <script src="../../js/application.js"></script>
+        <script>
+            
+
+            // $('.portfolio-item.item-mariana').hover(function(){
+            //     $('section.section-more').removeClass('item-touch').addClass('item-mariana');
+            // }, function(){
+            //     $('section.section-more').addClass('item-touch').removeClass('item-mariana');
+            // });
+            // $('.portfolio-item.item-unfolding').hover(function(){
+            //     $('section.section-more').removeClass('item-touch').addClass('item-unfolding');
+            // }, function(){
+            //     $('section.section-more').addClass('item-touch').removeClass('item-unfolding');
+            // });
+
+            $( function() {
+                /*
+                - how to call the plugin:
+                $( selector ).cbpFWSlider( [options] );
+                - options:
+                {
+                    // default transition speed (ms)
+                    speed : 500,
+                    // default transition easing
+                    easing : 'ease'
+                }
+                - destroy:
+                $( selector ).cbpFWSlider( 'destroy' );
+                */
+
+                $( '#cbp-fwslider' ).cbpFWSlider();
+                //$( '#cbp-fwslider2' ).cbpFWSlider();
+            } );
+        </script>
+    </body>
+</html>

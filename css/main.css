@@ -1,0 +1,2009 @@
+@charset "UTF-8";
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Global Styles */
+/* Browser Version Control */
+/* line 11, ../sass/main.scss */
+canvas {
+  display: block;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+}
+
+/* line 18, ../sass/main.scss */
+#particles-js {
+  height: 100%;
+  background: transparent;
+  z-index: -100;
+}
+
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+/* line 58, ../sass/main.scss */
+.no-js #loader {
+  display: none;
+}
+
+/* line 59, ../sass/main.scss */
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+/* line 60, ../sass/main.scss */
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  background: #FFF;
+  background: url(../img/Preloader_3.gif) center no-repeat #fff;
+}
+
+/* line 71, ../sass/main.scss */
+.loader {
+  position: absolute;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  margin-top: 24%;
+}
+
+/*
+  Set the color of the icon
+*/
+/* line 85, ../sass/main.scss */
+svg path,
+svg rect {
+  fill: #8cb8dd;
+}
+
+/* line 93, ../sass/main.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 98, ../sass/main.scss */
+body {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #FFF;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fadein .7s;
+  /* Safari and Chrome */
+  -moz-animation: fadein .7s;
+  /* Firefox */
+  -o-animation: fadein .7s;
+  /* Opera */
+  animation: fadein .7s;
+  /*background-image: url(http://basehold.it/i/30);*/
+  font-size: 14px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 500px) {
+  /* line 98, ../sass/main.scss */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* line 111, ../sass/main.scss */
+section {
+  display: block;
+  height: auto;
+  margin: 0;
+}
+
+/* line 117, ../sass/main.scss */
+.section-more {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 120, ../sass/main.scss */
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+/* break points: 1199, 991 */
+/*---------- HOME ----------*/
+/* line 128, ../sass/main.scss */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url(../img/bg-copy1.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* line 140, ../sass/main.scss */
+.logo {
+  margin-top: -50px;
+  opacity: 0;
+}
+
+/* line 145, ../sass/main.scss */
+#logocover {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 1000ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 1000ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 1000ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 1000ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 149, ../sass/main.scss */
+.photo {
+  position: absolute;
+  bottom: 20px;
+  color: #f7f7f7;
+  font-weight: 400;
+}
+/* line 154, ../sass/main.scss */
+.photo .i {
+  color: #f7f7f7;
+}
+/* line 157, ../sass/main.scss */
+.photo:hover, .photo:active, .photo:focus {
+  color: #f7f7f7;
+}
+
+/* Navigation */
+/* line 167, ../sass/main.scss */
+.navigation.nav-light {
+  height: 210px;
+  position: absolute;
+  padding-top: 35px;
+  width: 100%;
+  z-index: 10000;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+/* line 175, ../sass/main.scss */
+.navigation.nav-light ul {
+  margin-top: 40px;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+@media screen and (max-height: 515px) {
+  /* line 179, ../sass/main.scss */
+  .navigation.nav-light ul.front {
+    margin-top: -40px;
+  }
+}
+/* line 184, ../sass/main.scss */
+.navigation.nav-light li.active a {
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  border-bottom: 3px #f7f7f7 solid;
+}
+/* line 188, ../sass/main.scss */
+.navigation.nav-light li a {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #f7f7f7;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+/* line 198, ../sass/main.scss */
+.navigation.nav-light li a:hover {
+  text-decoration: none;
+  border-bottom: 3px #f7f7f7 solid;
+  opacity: 0.9;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 206, ../sass/main.scss */
+.btn-light {
+  border-radius: 0;
+  color: #080808;
+}
+/* line 209, ../sass/main.scss */
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #080808;
+  opacity: 0.8;
+}
+
+/* line 167, ../sass/main.scss */
+.navigation.nav-dark {
+  height: 210px;
+  position: absolute;
+  padding-top: 35px;
+  width: 100%;
+  z-index: 10000;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+/* line 175, ../sass/main.scss */
+.navigation.nav-dark ul {
+  margin-top: 40px;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+@media screen and (max-height: 515px) {
+  /* line 179, ../sass/main.scss */
+  .navigation.nav-dark ul.front {
+    margin-top: -40px;
+  }
+}
+/* line 184, ../sass/main.scss */
+.navigation.nav-dark li.active a {
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  border-bottom: 3px #222 solid;
+}
+/* line 188, ../sass/main.scss */
+.navigation.nav-dark li a {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #222;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+/* line 198, ../sass/main.scss */
+.navigation.nav-dark li a:hover {
+  text-decoration: none;
+  border-bottom: 3px #222 solid;
+  opacity: 0.9;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 206, ../sass/main.scss */
+.btn-dark {
+  border-radius: 0;
+  color: #dddddd;
+}
+/* line 209, ../sass/main.scss */
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #dddddd;
+  opacity: 0.8;
+}
+
+/* line 216, ../sass/main.scss */
+.icontop {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  height: 70px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+/* line 224, ../sass/main.scss */
+.icontop:hover {
+  opacity: 1;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+@media screen and (max-height: 515px) {
+  /* line 229, ../sass/main.scss */
+  .icontop.front {
+    display: none !IMPORTANT;
+  }
+}
+
+/* line 235, ../sass/main.scss */
+.info {
+  position: relative;
+  padding-top: 200px;
+  display: block;
+  height: auto;
+  background: #FFF;
+  /*background-image: url(http://basehold.it/i/30);*/
+  min-height: 100%;
+  z-index: 1000;
+}
+@media screen and (max-width: 991px) {
+  /* line 235, ../sass/main.scss */
+  .info {
+    padding-bottom: 180px;
+  }
+}
+@media screen and (max-height: 750px) {
+  /* line 235, ../sass/main.scss */
+  .info {
+    padding-bottom: 180px;
+  }
+}
+
+/* line 253, ../sass/main.scss */
+.lead.front-content {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/* line 260, ../sass/main.scss */
+#footer-front {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 278, ../sass/main.scss */
+.tagline {
+  text-transform: uppercase;
+  font-size: 14pt;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+}
+
+/* line 293, ../sass/main.scss */
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 299, ../sass/main.scss */
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+/* Custom Horizontal Rule */
+/* line 312, ../sass/main.scss */
+hr.small {
+  max-width: 100px;
+}
+
+/* ---------- About ---------- */
+/* line 436, ../sass/main.scss */
+.about {
+  padding: 40px 0;
+  min-height: 570px !IMPORTANT;
+}
+@media screen and (max-width: 450px) {
+  /* line 436, ../sass/main.scss */
+  .about {
+    min-height: 455px !IMPORTANT;
+  }
+}
+
+/* line 444, ../sass/main.scss */
+.about.full-bg1 {
+  background: #85b7d8 url(../img/about-bg1.jpg) no-repeat top center;
+  background-size: cover;
+  min-height: 70%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 600ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 600ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 600ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 600ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 454, ../sass/main.scss */
+.about.full-bg2 {
+  background: #85b7d8 url(../img/about-bg2.jpg) no-repeat top center;
+  background-size: cover;
+  min-height: 70%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* line 466, ../sass/main.scss */
+.lead.lead-large {
+  opacity: 0;
+  font-size: 3.2em;
+  font-weight: 400;
+  color: #f7f7f7;
+  letter-spacing: 0.02em;
+  margin-top: 200px;
+  line-height: 1.35;
+  /*@include transition-all(400ms); don't need this!*/
+}
+@media screen and (max-width: 450px) {
+  /* line 466, ../sass/main.scss */
+  .lead.lead-large {
+    font-size: 2.8em !IMPORTANT;
+    text-align: center;
+  }
+}
+
+/* line 482, ../sass/main.scss */
+.lead.lead-content {
+  font-size: 1.2em;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1094px) {
+  /* line 482, ../sass/main.scss */
+  .lead.lead-content {
+    padding-right: 30px;
+  }
+}
+
+/* line 493, ../sass/main.scss */
+.contact {
+  padding-left: 16px;
+  margin-bottom: 40px;
+}
+/* line 495, ../sass/main.scss */
+.contact h4 {
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+}
+/* line 500, ../sass/main.scss */
+.contact a {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+/* line 503, ../sass/main.scss */
+.contact a:hover, .contact a:focus, .contact a:active {
+  text-decoration: none;
+}
+
+/* line 510, ../sass/main.scss */
+.nextline {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 514, ../sass/main.scss */
+  .small-center {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+
+/* line 521, ../sass/main.scss */
+.skills {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+}
+
+/* line 527, ../sass/main.scss */
+ul.skills {
+  padding-left: 0px;
+  list-style: none;
+}
+/* line 530, ../sass/main.scss */
+ul.skills li {
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 2;
+}
+/* line 535, ../sass/main.scss */
+ul.skills li:before {
+  content: "•";
+  color: #377bb5;
+  /* or whatever color you prefer */
+}
+
+/* ---------- Blog ---------- */
+/* line 544, ../sass/main.scss */
+.blog {
+  padding: 270px 0 40px 0;
+}
+
+/* line 548, ../sass/main.scss */
+.date {
+  padding-top: 15px;
+  color: #b2b2b2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 554, ../sass/main.scss */
+  .col-lg-4 p.date {
+    margin-top: 20px;
+  }
+}
+
+/* line 560, ../sass/main.scss */
+a .next-article {
+  margin-top: 8px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+/* line 564, ../sass/main.scss */
+a .next-article div {
+  color: #323232;
+}
+
+/* line 579, ../sass/main.scss */
+.blog-item a {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+/* line 581, ../sass/main.scss */
+.blog-item a div {
+  color: #323232;
+}
+
+/* line 595, ../sass/main.scss */
+.next-article p.leadbig {
+  font-size: 1.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* line 602, ../sass/main.scss */
+.blog-link {
+  color: #323232;
+}
+/* line 604, ../sass/main.scss */
+.blog-link:hover {
+  color: #666;
+}
+
+/* line 609, ../sass/main.scss */
+.blog-title {
+  padding-top: 11px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 1.6em;
+  letter-spacing: 0.03em;
+}
+
+/* line 618, ../sass/main.scss */
+.blog-content {
+  font-size: 1.4em;
+  padding-top: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+/* line 625, ../sass/main.scss */
+.border-none {
+  border-left: 0px !IMPORTANT;
+}
+
+/* line 629, ../sass/main.scss */
+.blog-info {
+  border-left: 8px #3f89c8 solid;
+  padding-left: 10px;
+}
+/* line 632, ../sass/main.scss */
+.blog-info ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+/* line 637, ../sass/main.scss */
+.blog-info li {
+  display: inline;
+  color: #f7f7f7;
+  padding: 5px 10px;
+  background: #3f89c8;
+  border-radius: 6px;
+  line-height: 3;
+}
+/* line 645, ../sass/main.scss */
+.blog-info h4 {
+  line-height: 1.5;
+  font-size: 1.4em;
+  letter-spacing: 0.005em;
+}
+
+/* line 652, ../sass/main.scss */
+.share {
+  line-height: 1.5;
+  font-size: 1.4em;
+  display: inline;
+}
+/* line 656, ../sass/main.scss */
+.share a {
+  padding: 10px;
+}
+
+/* ---------- Porfolio ---------- */
+/* line 675, ../sass/main.scss */
+.portfolio {
+  padding: 210px 0 0px 0;
+}
+
+/* line 679, ../sass/main.scss */
+.portfolio-item {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+/* line 686, ../sass/main.scss */
+.portfolio .col-md-6, .section-more .col-md-6 {
+  padding-left: 0px !IMPORTANT;
+  padding-right: 0px !IMPORTANT;
+}
+
+/* line 692, ../sass/main.scss */
+.portfolio-description {
+  font-size: .35em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+/* line 704, ../sass/main.scss */
+.type {
+  display: none;
+  position: absolute;
+  text-transform: uppercase;
+  color: #FFF;
+  z-index: 100;
+  bottom: 50px;
+  left: 40px;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+}
+
+/* line 716, ../sass/main.scss */
+.portfolio-item h1 {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  margin-top: -33px;
+  width: 100%;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #f7f7f7;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  z-index: 99;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 732, ../sass/main.scss */
+.portfolio-item .fa-angle-left {
+  opacity: 0;
+  position: absolute;
+  top: 42%;
+  left: 70px;
+  color: #FFF;
+  font-size: 4em;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 742, ../sass/main.scss */
+.portfolio-item .fa-angle-right {
+  opacity: 0;
+  position: absolute;
+  top: 42%;
+  right: 70px;
+  color: #FFF;
+  font-size: 4em;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 500ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 752, ../sass/main.scss */
+.portfolio-item a:hover .fa-angle-left {
+  opacity: 0.8;
+  left: 40px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 757, ../sass/main.scss */
+.portfolio-item a:hover .fa-angle-right {
+  opacity: 0.8;
+  right: 40px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 763, ../sass/main.scss */
+.portfolio-item a:hover h1,
+.portfolio-item a:focus h1 {
+  opacity: 1;
+  bottom: 60px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 772, ../sass/main.scss */
+.img-responsive {
+  width: 100%;
+}
+
+/* line 775, ../sass/main.scss */
+.img-caption {
+  width: 100%;
+  margin-top: -20px;
+}
+@media screen and (max-width: 991px) {
+  /* line 775, ../sass/main.scss */
+  .img-caption {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1094px) {
+  /* line 782, ../sass/main.scss */
+  .thesis-book {
+    display: none;
+  }
+}
+
+/* line 788, ../sass/main.scss */
+.cbp-fwdots {
+  display: none;
+}
+
+/* line 790, ../sass/main.scss */
+.play {
+  backface-visibility: hidden;
+  cursor: pointer;
+  opacity: 0.5;
+  display: block;
+  width: 100px !IMPORTANT;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0px 15px 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 200ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 200ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 200ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 200ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  z-index: 99999;
+}
+
+/* line 806, ../sass/main.scss */
+.project {
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: -5px;
+}
+
+/* line 813, ../sass/main.scss */
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 820, ../sass/main.scss */
+.fixedDiv {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #cacfd6;
+  z-index: 900;
+  visibility: hidden;
+}
+
+/* line 833, ../sass/main.scss */
+.img-portfolio {
+  opacity: 1;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 839, ../sass/main.scss */
+.portfolio-item:hover .img-portfolio {
+  opacity: 0.2;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 846, ../sass/main.scss */
+input#password {
+  -webkit-text-security: disc;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-mariana {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(139, 195, 74, 0.6), rgba(139, 195, 74, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-mariana {
+    background: linear-gradient(rgba(139, 195, 74, 0.6), rgba(139, 195, 74, 0.4)), url("../work/mariana-immersion/assets/mariana.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-mariana {
+  background: #8bc34a;
+}
+
+/* line 883, ../sass/main.scss */
+.color-mariana {
+  color: #8BC34A;
+}
+
+/* line 886, ../sass/main.scss */
+.border-mariana {
+  border-left: 8px #8BC34A solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-touch {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(92, 107, 192, 0.6), rgba(92, 107, 192, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-touch {
+    background: linear-gradient(rgba(92, 107, 192, 0.6), rgba(92, 107, 192, 0.4)), url("../work/touch-of-sound/assets/touch.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-touch {
+  background: #5c6bc0;
+}
+
+/* line 883, ../sass/main.scss */
+.color-touch {
+  color: #5C6BC0;
+}
+
+/* line 886, ../sass/main.scss */
+.border-touch {
+  border-left: 8px #5C6BC0 solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-unfolding {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(153, 102, 153, 0.6), rgba(153, 102, 153, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-unfolding {
+    background: linear-gradient(rgba(153, 102, 153, 0.6), rgba(153, 102, 153, 0.4)), url("../work/unfolding-through-time/assets/unfolding.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-unfolding {
+  background: #996699;
+}
+
+/* line 883, ../sass/main.scss */
+.color-unfolding {
+  color: #996699;
+}
+
+/* line 886, ../sass/main.scss */
+.border-unfolding {
+  border-left: 8px #996699 solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-omni {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(196, 88, 88, 0.6), rgba(196, 88, 88, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-omni {
+    background: linear-gradient(rgba(196, 88, 88, 0.6), rgba(196, 88, 88, 0.4)), url("../work/omni-transit-system/assets/omni.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-omni {
+  background: #c45858;
+}
+
+/* line 883, ../sass/main.scss */
+.color-omni {
+  color: #c45858;
+}
+
+/* line 886, ../sass/main.scss */
+.border-omni {
+  border-left: 8px #c45858 solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-delight {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(232, 97, 67, 0.6), rgba(232, 97, 67, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-delight {
+    background: linear-gradient(rgba(232, 97, 67, 0.6), rgba(232, 97, 67, 0.4)), url("../work/unexpected-delight/assets/delight.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-delight {
+  background: #e86143;
+}
+
+/* line 883, ../sass/main.scss */
+.color-delight {
+  color: #e86143;
+}
+
+/* line 886, ../sass/main.scss */
+.border-delight {
+  border-left: 8px #e86143 solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-atmos {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(80, 162, 179, 0.6), rgba(80, 162, 179, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-atmos {
+    background: linear-gradient(rgba(80, 162, 179, 0.6), rgba(80, 162, 179, 0.4)), url("../work/atmos-weather-app/assets/atmos.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-atmos {
+  background: #50a2b3;
+}
+
+/* line 883, ../sass/main.scss */
+.color-atmos {
+  color: #50a2b3;
+}
+
+/* line 886, ../sass/main.scss */
+.border-atmos {
+  border-left: 8px #50a2b3 solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-google {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(79, 81, 93, 0.6), rgba(79, 81, 93, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-google {
+    background: linear-gradient(rgba(79, 81, 93, 0.6), rgba(79, 81, 93, 0.4)), url("../work/google-glass/assets/google.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-google {
+  background: #4f515d;
+}
+
+/* line 883, ../sass/main.scss */
+.color-google {
+  color: #4f515d;
+}
+
+/* line 886, ../sass/main.scss */
+.border-google {
+  border-left: 8px #4f515d solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-duo {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(133, 184, 217, 0.6), rgba(133, 184, 217, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-duo {
+    background: linear-gradient(rgba(133, 184, 217, 0.6), rgba(133, 184, 217, 0.4)), url("../work/duo-design/assets/duo.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-duo {
+  background: #85b8d9;
+}
+
+/* line 883, ../sass/main.scss */
+.color-duo {
+  color: #85b8d9;
+}
+
+/* line 886, ../sass/main.scss */
+.border-duo {
+  border-left: 8px #85b8d9 solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-jordan {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(69, 117, 154, 0.6), rgba(69, 117, 154, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-jordan {
+    background: linear-gradient(rgba(69, 117, 154, 0.6), rgba(69, 117, 154, 0.4)), url("../work/jordan-hangar/assets/jordan.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-jordan {
+  background: #45759a;
+}
+
+/* line 883, ../sass/main.scss */
+.color-jordan {
+  color: #45759a;
+}
+
+/* line 886, ../sass/main.scss */
+.border-jordan {
+  border-left: 8px #45759a solid;
+}
+
+/* line 862, ../sass/main.scss */
+.header-project-body {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(179, 175, 112, 0.6), rgba(179, 175, 112, 0.4));
+}
+@media screen and (max-width: 795px) {
+  /* line 862, ../sass/main.scss */
+  .header-project-body {
+    background: linear-gradient(rgba(179, 175, 112, 0.6), rgba(179, 175, 112, 0.4)), url("../work/body-and-forms/assets/body.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 880, ../sass/main.scss */
+.item-body {
+  background: #b3af70;
+}
+
+/* line 883, ../sass/main.scss */
+.color-body {
+  color: #b3af70;
+}
+
+/* line 886, ../sass/main.scss */
+.border-body {
+  border-left: 8px #b3af70 solid;
+}
+
+/* ---------- Common ---------- */
+/* Text */
+/* line 896, ../sass/main.scss */
+h2.text-center {
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: capitalize;
+}
+
+/* line 904, ../sass/main.scss */
+.text-muted {
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+/* line 912, ../sass/main.scss */
+.w100 {
+  font-weight: 100 !IMPORTANT;
+}
+
+/* line 916, ../sass/main.scss */
+.preserve {
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+/* Layout */
+/* line 925, ../sass/main.scss */
+.container {
+  padding: 0 40px;
+}
+@media screen and (max-width: 500px) {
+  /* line 925, ../sass/main.scss */
+  .container {
+    padding: 0 18px;
+  }
+}
+
+/* line 936, ../sass/main.scss */
+.black {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #000;
+  opacity: 0.9;
+}
+
+/* line 947, ../sass/main.scss */
+.social {
+  font-size: 1.2em;
+  padding: 20px 20px 0 20px;
+  margin: 0;
+  color: #333;
+}
+/* line 953, ../sass/main.scss */
+.social:hover {
+  color: #8cb8de;
+}
+
+/* line 957, ../sass/main.scss */
+.fa-twitter.social {
+  padding-left: 0px;
+}
+
+/* line 964, ../sass/main.scss */
+.lead-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+}
+
+/* line 972, ../sass/main.scss */
+.leadbig {
+  margin-top: 22px;
+  margin-bottom: 12px;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* line 980, ../sass/main.scss */
+.lg-icon {
+  font-size: 40px;
+}
+
+/* line 984, ../sass/main.scss */
+.large {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+/* Services */
+/* line 991, ../sass/main.scss */
+.services {
+  padding: 50px 0;
+}
+
+/* line 995, ../sass/main.scss */
+.service-item {
+  margin-bottom: 30px;
+}
+
+/* line 998, ../sass/main.scss */
+.service-item i {
+  -webkit-transform: rotate(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 400ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+/* line 1010, ../sass/main.scss */
+.service-item i:hover {
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+/* Callout */
+/* line 1024, ../sass/main.scss */
+.callout {
+  display: table;
+  width: 100%;
+  height: 400px !IMPORTANT;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 1036, ../sass/main.scss */
+.transition {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+/* line 1042, ../sass/main.scss */
+.angle-down {
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  z-index: 1000;
+}
+
+/* line 1051, ../sass/main.scss */
+.angle-up {
+  display: block;
+  margin: 0 auto;
+  height: 70px;
+  width: 80px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -moz-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  -o-transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  transition: all 300ms cubic-bezier(0.475, 0.185, 0, 0.995);
+}
+
+/* line 1059, ../sass/main.scss */
+.transition-movedown {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 1070, ../sass/main.scss */
+.transition-moveup {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Call to Action */
+/* line 1083, ../sass/main.scss */
+.call-to-action {
+  padding: 50px 0;
+}
+
+/* line 1087, ../sass/main.scss */
+.call-to-action .btn {
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 1093, ../sass/main.scss */
+  .cbp-fwdots {
+    display: none;
+  }
+
+  /* line 1095, ../sass/main.scss */
+  .portfolio-description {
+    display: none;
+  }
+
+  /* line 1098, ../sass/main.scss */
+  .portfolio-item h1 {
+    font-size: 1.5em;
+    margin-top: -14px;
+  }
+
+  /* line 1102, ../sass/main.scss */
+  .portfolio-item a:hover h1,
+  .portfolio-item a:focus h1 {
+    display: none;
+    bottom: 41%;
+  }
+
+  /* line 1107, ../sass/main.scss */
+  .portfolio-item:hover .img-portfolio {
+    opacity: 1;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+    -moz-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+    -o-transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+    transition: all 100ms cubic-bezier(0.475, 0.185, 0, 0.995);
+  }
+
+  /* line 1112, ../sass/main.scss */
+  .transition {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Footer */
+/* line 1123, ../sass/main.scss */
+footer {
+  padding: 0 0 60px 0;
+  background-color: #f7f7f7;
+}
+
+/* line 1127, ../sass/main.scss */
+#blog {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 1167, ../sass/main.scss */
+.video-in #video {
+  z-index: 100;
+}
+
+/* line 1171, ../sass/main.scss */
+video#bgvid {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+@media screen and (max-width: 795px) {
+  /* line 1171, ../sass/main.scss */
+  video#bgvid {
+    display: none;
+  }
+}
+
+/*slider*/
+/* line 1182, ../sass/main.scss */
+.cbp-fwslider {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+}
+
+/* line 1188, ../sass/main.scss */
+.cbp-fwslider ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+/* line 1195, ../sass/main.scss */
+.cbp-fwslider ul li {
+  transform: translateZ(0);
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1203, ../sass/main.scss */
+.cbp-fwslider ul li > a,
+.cbp-fwslider ul li > div {
+  display: block;
+  text-align: center;
+  outline: none;
+}
+
+/* line 1210, ../sass/main.scss */
+.cbp-fwslider ul li > a img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+/* line 1217, ../sass/main.scss */
+.cbp-fwslider nav span {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -50px;
+  line-height: 100px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* line 1232, ../sass/main.scss */
+.cbp-fwslider nav span:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* line 1236, ../sass/main.scss */
+.cbp-fwslider nav span.cbp-fwnext {
+  right: 0px;
+}
+
+/* line 1240, ../sass/main.scss */
+.cbp-fwslider nav span.cbp-fwprev {
+  left: 0px;
+}
+
+/* line 1245, ../sass/main.scss */
+.cbp-fwdots {
+  position: absolute;
+  bottom: 20px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  z-index: 100000;
+}
+
+/* line 1254, ../sass/main.scss */
+.cbp-fwdots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #777;
+  margin: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* line 1264, ../sass/main.scss */
+.cbp-fwdots span:hover {
+  background: #999;
+}
+
+/* line 1268, ../sass/main.scss */
+.cbp-fwdots span.cbp-fwcurrent {
+  background: #FFF;
+  box-shadow: 0 0 0 2px #FFF;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* line 1274, ../sass/main.scss */
+.hideme {
+  opacity: 0;
+}
+
+/* General styles for all menus */
+/* line 1280, ../sass/main.scss */
+.cbp-spmenu {
+  background: #0d2440;
+  position: fixed;
+}
+
+/* line 1285, ../sass/main.scss */
+.cbp-spmenu h3 {
+  color: #afdefa;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #0d77b6;
+}
+
+/* line 1294, ../sass/main.scss */
+.cbp-spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+/* line 1301, ../sass/main.scss */
+.cbp-spmenu a:hover {
+  /*background: #258ecd;*/
+}
+
+/* line 1305, ../sass/main.scss */
+.cbp-spmenu a:active {
+  /*background: #afdefa;*/
+  /*color: #47a3da;*/
+}
+
+/* Orientation-dependent styles for the content of the menu */
+/* line 1312, ../sass/main.scss */
+.cbp-spmenu-vertical {
+  width: 250px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* line 1318, ../sass/main.scss */
+.cbp-spmenu-vertical ul {
+  margin-top: 180px;
+}
+
+/* line 1322, ../sass/main.scss */
+.cbp-spmenu-vertical a {
+  /*border-bottom: 1px solid #258ecd;*/
+  padding: 1em;
+}
+
+/* line 1327, ../sass/main.scss */
+.cbp-spmenu-horizontal {
+  width: 100%;
+  height: 150px;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* line 1335, ../sass/main.scss */
+.cbp-spmenu-horizontal h3 {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+/* line 1341, ../sass/main.scss */
+.cbp-spmenu-horizontal a {
+  float: left;
+  width: 20%;
+  padding: 0.8em;
+  border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+/* line 1350, ../sass/main.scss */
+.cbp-spmenu-left {
+  left: -250px;
+}
+
+/* line 1354, ../sass/main.scss */
+.cbp-spmenu-right {
+  right: -250px;
+}
+
+/* line 1358, ../sass/main.scss */
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+/* line 1362, ../sass/main.scss */
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+/* line 1368, ../sass/main.scss */
+.cbp-spmenu-top {
+  top: -150px;
+}
+
+/* line 1372, ../sass/main.scss */
+.cbp-spmenu-bottom {
+  bottom: -150px;
+}
+
+/* line 1376, ../sass/main.scss */
+.cbp-spmenu-top.cbp-spmenu-open {
+  top: 0px;
+}
+
+/* line 1380, ../sass/main.scss */
+.cbp-spmenu-bottom.cbp-spmenu-open {
+  bottom: 0px;
+}
+
+/* Push classes applied to the body */
+/* line 1386, ../sass/main.scss */
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+/* line 1392, ../sass/main.scss */
+.cbp-spmenu-push-toright {
+  left: 240px;
+}
+
+/* line 1396, ../sass/main.scss */
+.cbp-spmenu-push-toleft {
+  left: -240px;
+}
+
+/* Transitions */
+/* line 1402, ../sass/main.scss */
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Example media queries */
+@media screen and (max-width: 55.1875em) {
+  /* line 1413, ../sass/main.scss */
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px;
+  }
+
+  /* line 1418, ../sass/main.scss */
+  .cbp-spmenu-top {
+    top: -110px;
+  }
+
+  /* line 1422, ../sass/main.scss */
+  .cbp-spmenu-bottom {
+    bottom: -110px;
+  }
+}
+@media screen and (max-height: 26.375em) {
+  /* line 1430, ../sass/main.scss */
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  /* line 1435, ../sass/main.scss */
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px;
+  }
+
+  /* line 1440, ../sass/main.scss */
+  .cbp-spmenu-right {
+    right: -190px;
+  }
+
+  /* line 1444, ../sass/main.scss */
+  .cbp-spmenu-push-toright {
+    left: 190px;
+  }
+}
+/* ------------ navigation ------------ */
